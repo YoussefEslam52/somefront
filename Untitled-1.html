@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cafe Feedback Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+      }
+      h1 {
+        text-align: center;
+        color: #555;
+      }
+      form {
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      select {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #f5f5f5;
+        margin-bottom: 20px;
+      }
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #f5f5f5;
+        margin-bottom: 20px;
+        resize: vertical;
+      }
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Cafe Feedback Form</h1>
+    <p>We value your feedback! Please rate the following aspects of your experience:</p>
+    <form>
+      <label for="food-rating">Food quality:</label>
+      <select id="food-rating" name="food-rating">
+        <option value="5">5 (Excellent)</option>
+        <option value="4">4 (Good)</option>
+        <option value="3">3 (Average)</option>
+        <option value="2">2 (Poor)</option>
+        <option value="1">1 (Very poor)</option>
+      </select>
+
+      <label for="service-rating">Service quality:</label>
+      <select id="service-rating" name="service-rating">
+        <option value="5">5 (Excellent)</option>
+        <option value="4">4 (Good)</option>
+        <option value="3">3 (Average)</option>
+        <option value="2">2 (Poor)</option>
+        <option value="1">1 (Very poor)</option>
+      </select>
+
+      <label for="drinks-rating">Drink quality:</label>
+      <select id="drinks-rating" name="drinks-rating">
+        <option value="5">5 (Excellent)</option>
+        <option value="4">4 (Good)</option>
+        <option value="3">3 (Average)</option>
+        <option value="2">2 (Poor)</option>
+        <option value="1">1 (Very poor)</option>
+      </select>
+
+      <label for="environment-rating">Environmental friendliness:</label>
+      <select id="environment-rating" name="environment-rating">
+        <option value="5">5 (Excellent)</option>
+        <option value="4">4 (Good)</option>
+        <option value="3">3 (Average)</option>
+        <option value="2">2 (Poor)</option>
+        <option value="1">1 (Very poor)</option>
+      </select>
+
+      <label for="feedback">Additional feedback:</label>
+      <textarea id="feedback" name="feedback" rows="5" placeholder="Please provide any additional feedback..."></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

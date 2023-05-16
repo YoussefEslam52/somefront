@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Menu</h1>
+	</header>
+	<main>
+		<section>
+			<h2>Hot Drinks</h2>
+			<ul>
+				<li>
+					<div class="item">
+						<div class="name-price">
+							<h3>Egyptian coffee</h3>
+							<p>20 EGP</p>
+						</div>
+						<p class="description">A strong, traditional coffee prepared in the Egyptian style.</p>
+						<form>
+							<label for="egyptian-coffee-quantity">Quantity:</label>
+							<input type="number" id="egyptian-coffee-quantity" name="egyptian-coffee-quantity" value="0" min="0">
+							<p class="total-price">Total Price: 0 EGP</p>
+							<button class="add-to-cart" type="button" onclick="addToCart('Egyptian coffee', 20, 'egyptian-coffee-quantity')">Add to Cart</button>
+						</form>
+					</div>
+				</li>
+				<li>
+					<div class="item">
+						<div class="name-price">
+							<h3>Turkish coffee</h3>
+							<p>25 EGP</p>
+						</div>
+						<p class="description">A rich and bold coffee made in the traditional Turkish style.</p>
+						<form>
+							<label for="turkish-coffee-quantity">Quantity:</label>
+							<input type="number" id="turkish-coffee-quantity" name="turkish-coffee-quantity" value="0" min="0">
+							<p class="total-price">Total Price: 0 EGP</p>
+							<button class="add-to-cart" type="button" onclick="addToCart('Turkish coffee', 25, 'turkish-coffee-quantity')">Add to Cart</button>
+						</form>
+					</div>
+				</li>
+				<li>
+					<div class="item">
+						<div class="name-price">
+							 <h3>Espresso</h3>
+							 <p>25 EGP</p>
+						</div>
+						<p class="description">A concentrated shot of coffee, perfect for a quick and strong caffeine boost.</p>
+						<form>
+							<label for="espresso-quantity">Quantity:</label>
+							<input type="number" id="espresso-quantity" name="espresso-quantity" value="0" min="0">
+							<p class="total-price">Total Price: 0 EGP</p>
+							<button class="add-to-cart" type="button" onclick="addToCart('Espresso', 25, 'espresso-quantity')">Add to Cart</button>
+						</form>
+					</div>
+				</li>
+				<li>
+					<div class="item">
+						<div class="name-price">
+							 <h3>Cappuccino</h3>
+							 <p>30 EGP</p>
+						</div>
+						<p class="description">A classic Italian coffee with espresso, steamed milk, and a layer of foam on top.</p>
+						<form>
+							<label for="cappuccino-quantity">Quantity:</label>
+							<input type="number" id="cappuccino-quantity" name="cappuccino-quantity" value="0" min="0">
+							<p class="total-price">Total Price: 0 EGP</p>
+							<button class="add-to-cart" type="button" onclick="addToCart('Cappuccino', 30, 'cappuccino-quantity')">Add to Cart</button>
+						</form>
+					</div>
+				</li>
+				<li>
+					<div class="item">
+						<div class="name-price">
+							 <h3>Latte</h3>
+							 <p>35 EGP</p>
+						</div>
+						<p class="description">A creamy coffee made with espresso and steamed milk, topped with a layer of foam.</p>
+						<form>
+							<label for="latte-quantity">Quantity:</label>
+							<input type="number" id="latte-quantity" name="latte-quantity" value="0" min="0">
+							<p class="total-price">Total Price: 0 EGP</p>
+							<button class="add-to-cart" type="button" onclick="addToCart('Latte', 35, 'latte-quantity')">Add to Cart</button>
+						</form>
+					</div>
+				</li>
+				<li>
+					<div class="item">
+						<div class="name-price">
+							 <h3>Tea (black, green, mint)</h3>
+							 <p>15 EGP</p>
+						</div>
+						<p class="description">A selection of high-quality teas, including black, green, and mint.</p>
+						<form>
+							<label for="tea-quantity">Quantity:</label>
+							<input type="number" id="tea-quantity" name="tea-quantity" value="0" min="0">
+							<p class="total-price">Total Price: 0 EGP</p>
+							<button class="add-to-cart" type="button" onclick="addToCart('Tea', 15, 'tea-quantity')">Add to Cart</button>
+						</form>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Cold Drinks</h2>
+			<ul>
+				<li>
+					<div class="item">
+						<div class="name-price">
+							 <h3>Iced coffee</h3>
+							 <p>30 EGP</p>
+						</div>
+						<p class="description">A refreshing iced coffee, perfect for a hot day.</p>
+						<form>
+							<label for="iced-coffee-quantity">Quantity:</label>
+							<input type="number" id="iced-coffee-quantity" name="iced-coffee-quantity" value="0" min="0">
+							<p class="total-price">Total Price: 0 EGP</p>
+							<button class="add-to-cart" type="button" onclick="addToCart('Iced coffee', 30, 'iced-coffee-quantity')">Add to Cart</button>
+						</form>
+					</div>
+				</li>
+				<li>
+					<div class="item">
+						<div class="name-price">
+							 <h3>Iced tea</h3>
+							 <p>20 EGP</p>
+						</div>
+						<p class="description">A refreshing iced tea, perfect for a hot day.</p>
+						<form>
+							<label for="iced-tea-quantity">Quantity:</label>
+							<input type="number" id="iced-tea-quantity" name="iced-tea-quantity" value="0" min="0">
+							<p class="total-price">Total Price: 0 EGP</p>
+							<button class="add-to-cart" type="button" onclick="addToCart('Iced tea', 20, 'iced-tea-quantity')">Add to Cart</button>
+						</form>
+					</div>
+				</li>
+				<li>
+					<div class="item">
+						<div class="name-price">
+							 <h3>Lemonade</h3>
+							 <p>25 EGP</p>
+						</div>
+						<p class="description">A refreshing lemonade made with fresh lemons and a touch of sweetness.</p>
+						<form>
+							<label for="lemonade-quantity">Quantity:</label>
+							<input type="number" id="lemonade-quantity" name="lemonade-quantity" value="0" min="0">
+							<p class="total-price">Total Price: 0 EGP</p>
+							<button class="add-to-cart" type="button" onclick="addToCart('Lemonade', 25, 'lemonade-quantity')">Add to Cart</button>
+						</form>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Snacks</h2>
+			<ul>
+				<li>
+					<div class="item">
+						<div class="name-price">
+							 <h3>Croissant</h3>
+							 <p>20 EGP</p>
+						</div>
+						<p class="description">A classic French croissant, flaky and buttery.</p>
+						<form>
+							<label for="croissant-quantity">Quantity:</label>
+							<input type="number" id="croissant-quantity" name="croissant-quantity" value="0" min="0">
+							<p class="total-price">Total Price: 0 EGP</p>
+							<button class="add-to-cart" type="button" onclick="addToCart('Croissant', 20, 'croissant-quantity')">Add to Cart</button>
+						</form>
+						</div>
+						</li>
+						<li>
+						<div class="item">
+						<div class="name-price">
+						<h3>Muffin</h3>
+						<p>25 EGP</p>
+						</div>
+						<p class="description">A freshly-baked muffin in your choice of flavor: chocolate chip, blueberry, or banana nut.</p>
+						<form>
+						<label for="muffin-quantity">Quantity:</label>
+						<input type="number" id="muffin-quantity" name="muffin-quantity" value="0" min="0">
+						<p class="total-price">Total Price: 0 EGP</p>
+						<button class="add-to-cart" type="button" onclick="addToCart('Muffin', 25, 'muffin-quantity')">Add to Cart</button>
+						</form>
+						</div>
+						</li>
+						<li>
+						<div class="item">
+						<div class="name-price">
+						<h3>Cinnamon roll</h3>
+						<p>30 EGP</p>
+						</div>
+						<p class="description">A delicious cinnamon roll, perfect for breakfast or a sweet treat any time of day.</p>
+						<form>
+						<label for="cinnamon-roll-quantity">Quantity:</label>
+						<input type="number" id="cinnamon-roll-quantity" name="cinnamon-roll-quantity" value="0" min="0">
+						<p class="total-price">Total Price: 0 EGP</p>
+						<button class="add-to-cart" type="button" onclick="addToCart('Cinnamon roll', 30, 'cinnamon-roll-quantity')">Add to Cart</button>
+						</form>
+						</div>
+						</li>
+						<li>
+						<div class="item">
+						<div class="name-price">
+						<h3>Bagel with cream cheese</h3>
+						<p>35 EGP</p>
+						</div>
+						<p class="description">A toasted bagel with your choice of plain or flavored cream cheese.</p>
+						<form>
+						<label for="bagel-quantity">Quantity:</label>
+						<input type="number" id="bagel-quantity" name="bagel-quantity" value="0" min="0">
+						<p class="total-price">Total Price: 0 EGP</p>
+						<button class="add-to-cart" type="button" onclick="addToCart('Bagel with cream cheese', 35, 'bagel-quantity')">Add to Cart</button>
+						</form>
+						</div>
+						</li>
+						</ul>
+						</section>
+						<section class="cart">
+						<h2>Cart</h2>
+						<ul id="cart-items">
+						</ul>
+						<p id="cart-total">Total: 0 EGP</p>
+						<button id="clear-cart" type="button" onclick="clearCart()">Clear Cart</button>
+						</section>
+						</main>
+						<script src="script.js"></script>
+						
+						</body> </html> ```
